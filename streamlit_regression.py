@@ -62,6 +62,7 @@ input_data = pd.concat(
 )
 
 # Scale the input data
+input_data = input_data[scaler.feature_names_in_]
 input_data_scaled = scaler.transform(input_data)
 
 # Predict estimated salary
